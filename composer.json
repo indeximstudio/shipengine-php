@@ -1,5 +1,5 @@
 {
-  "name": "shipengine/shipengine",
+  "name": "indeximstudio/shipengine",
   "type": "library",
   "description": "PHP library for the ShipEngine API.",
   "keywords": [
@@ -7,12 +7,12 @@
     "api",
     "shipping"
   ],
-  "homepage": "https://github.com/ShipEngine/shipengine-php",
+  "homepage": "https://github.com/indeximstudio/shipengine-php",
   "license": "Apache-2.0",
   "authors": [
     {
       "name": "shipengine/shipengine contributors",
-      "homepage": "https://github.com/ShipEngine/shipengine-php/contributors"
+      "homepage": "https://github.com/indeximstudio/shipengine-php/contributors"
     }
   ],
   "require": {
