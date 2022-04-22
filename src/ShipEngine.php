@@ -13,7 +13,7 @@ use ShipEngine\ListCarriers\Result as ListCarriersResult;
  *
  * @package ShipEngine
  */
-final class ShipEngine
+class ShipEngine
 {
     /**
      * ShipEngine SDK Version
@@ -111,6 +111,19 @@ final class ShipEngine
         $client = new ShipEngineClient();
         $apiResponse = $client->post(
             "v1/labels/rates/$rateId",
+            $config,
+            $params
+        );
+
+        return $apiResponse;
+    }
+    
+    public function estimateFromRate($params, $config = null): array
+    {
+        $config = $this->config->merge($config);
+        $client = new ShipEngineClient();
+        $apiResponse = $client->post(
+            "v1/rates/estimate",
             $config,
             $params
         );
